@@ -19,8 +19,8 @@ GDAS is a schema in XML to be used in a [Table Joining Service](http://www.openg
 * [Python 3.x](http://www.python.org/getit/)
 * [lxml](http://lxml.de/)
 * [Requests](http://docs.python-requests.org/en/latest/)
-* [Bottle](http://bottlepy.org/docs/dev/index.html) - included
-* [Waitress](https://github.com/Pylons/waitress) - included
+* [Bottle](http://bottlepy.org/docs/dev/index.html)
+* [Waitress](https://github.com/Pylons/waitress)
 
 ### Configuration
 
