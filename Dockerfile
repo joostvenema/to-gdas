@@ -16,11 +16,8 @@ RUN apt-get install -y git python3-lxml python3-requests python3-bottle python3-
 # pull latest to-gdas version from github
 RUN git clone https://github.com/ojajoh/to-gdas.git
 
-# set workingdir to application dir
-WORKDIR /usr/to-gdas
-
 # bring app to live
 ENTRYPOINT ["python3", "webapp.py"]
 
-# open the default port
+# expose the default port
 EXPOSE 9090
