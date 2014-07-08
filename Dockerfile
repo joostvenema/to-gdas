@@ -19,8 +19,10 @@ RUN git clone https://github.com/ojajoh/to-gdas.git
 # set workingdir
 WORKDIR /to-gdas
 
-# bring app to live
-ENTRYPOINT ["python3", "webapp.py"]
-
 # expose the default port
 EXPOSE 9090
+
+# bring app to live
+CMD python3 webapp.py
+
+
