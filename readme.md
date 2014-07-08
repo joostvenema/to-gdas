@@ -14,7 +14,17 @@ GDAS is a schema in XML to be used in a [Table Joining Service](http://www.openg
 
 ## Installation
 
-### Requirements
+### Install using Docker
+
+[Docker](http://docker.io) "is an open platform for developers and sysadmins to build, ship, and run distributed applications."
+
+To run to-gdas, use the following commandline: `docker run -d ojajoh/to-gdas to-gdas`
+
+The docker image is automatically build whenever `master` is updated.
+
+### Manual installation
+
+#### Requirements
 
 * [Python 3.x](http://www.python.org/getit/)
 * [lxml](http://lxml.de/)
@@ -22,14 +32,14 @@ GDAS is a schema in XML to be used in a [Table Joining Service](http://www.openg
 * [Bottle](http://bottlepy.org/docs/dev/index.html)
 * [Waitress](https://github.com/Pylons/waitress)
 
-### Configuration
+#### Configuration
 
 Edit config.json. The following settings are required:
 
-`host` - The hostname of the machine (default: 127.0.0.1)
+`host` - The hostname of the machine (default: 0.0.0.0)
 `port` - The port to be used (default: 9090)
 
-### Running the app
+#### Running the app
 Start the app: `python3 webapp.py`
 
 To run in the background (linux): `nohup python3 webapp.py > output.log &`
