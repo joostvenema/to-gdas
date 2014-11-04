@@ -14,7 +14,7 @@ RUN apt-get update
 RUN apt-get install -y git python3-lxml python3-requests python3-bottle python3-waitress
 
 # pull latest to-gdas version from github
-RUN git clone https://github.com/ojajoh/to-gdas.git
+RUN git clone https://github.com/joostvenema/to-gdas.git
 
 # set workingdir
 WORKDIR /to-gdas
