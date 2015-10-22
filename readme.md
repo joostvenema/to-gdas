@@ -46,15 +46,19 @@ To run in the background (linux): `nohup python3 webapp.py > output.log &`
 
 ### Using the service
 
-The service must be called with 2 parameters: `framework_url` and `dataset_url`. Please use a http GET request.
+The service must be called with 3 parameters: `tjs_url`, `framework_uri` and `dataset_url`. Please use a http GET request.
 
 example:
 
-`http://to-gdas.example.com:9090/sdmx?framework_url=[url]&dataset_url=[url]`
+`http://to-gdas.example.com:9090/sdmx?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]`
 
-`framework_url` has to be a `DescribeFrameworks` request to a TJS server:
+`tjs_url` should point to the TJS server:
 
-`http://host/tjs?service=TJS&version=1.0.0&request=DescribeFrameworks&FrameworkURI=[URI]`
+`http://www.mytjshost.com/tjs`
+
+`framework_uri` has to be a `FrameworkURI` that exists on the TJS server:
+
+`http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs/CBSGemeente2012`
 
 `dataset_url` should point to an SDMX file, or output of a service, e.g.:
 
@@ -62,4 +66,4 @@ example:
 
 Don't forget to [URL encode](http://www.w3schools.com/tags/ref_urlencode.asp) the request!
 
-The response should be a correct GDAS file wich can be used in a `JoinData` request. 
+The response should be a correct GDAS file wich can be used in a `JoinData` request.
