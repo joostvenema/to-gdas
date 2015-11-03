@@ -1,0 +1,4711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:GenericData xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:footer="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message/footer" xmlns:generic="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <message:Header>
+      <message:ID>f49162be9ebacb744388497191f8b779</message:ID>
+      <message:Test>false</message:Test>
+      <message:Prepared>2014-03-12T10:13:04</message:Prepared>
+      <message:Sender id="ESTAT">
+         <common:Name xml:lang="en">Eurostat</common:Name>
+         <message:Timezone>+01:00</message:Timezone>
+      </message:Sender>
+      <message:Receiver id="RECEIVER" />
+      <message:Structure structureID="ESTAT_DSD_hlth_cd_acdr_1_0" dimensionAtObservation="TIME_PERIOD">
+         <common:Structure>
+            <Ref agencyID="ESTAT" id="DSD_hlth_cd_acdr" version="1.0" />
+         </common:Structure>
+      </message:Structure>
+      <message:DataSetAction>Append</message:DataSetAction>
+      <message:DataSetID>hlth_cd_acdr</message:DataSetID>
+   </message:Header>
+   <message:DataSet structureRef="ESTAT_DSD_hlth_cd_acdr_1_0">
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AL" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT13" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT33" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="AT34" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE10" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE24" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE25" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE33" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE34" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BE35" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BG" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BG31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BG32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BG33" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BG34" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BG41" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="BG42" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH01" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH02" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH03" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH04" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH05" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH06" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CH07" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CY" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ01" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ02" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ03" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ04" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ05" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ06" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ07" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="CZ08" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE13" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE14" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE24" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE25" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE26" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE27" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE30" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE40" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE5" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE50" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE6" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE60" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE7" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE71" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE72" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE73" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE8" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE80" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE9" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE91" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE92" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE93" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DE94" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEA" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEA1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEA2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEA3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEA4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEA5" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEB" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEB1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEB2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEB3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEC" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEC0" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DED" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DED2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEE" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEE0" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEF" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEF0" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEG" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DEG0" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="DK" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EE" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL13" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL14" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL24" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL25" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL30" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL41" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL42" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EL43" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="15.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES13" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES24" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES30" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES41" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES42" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES43" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES51" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES52" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES53" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES61" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES62" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES63" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES64" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ES70" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EU15" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.6" />
+            <generic:Attributes>
+               <generic:Value id="OBS_FLAG" value="p" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="EU28" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.5" />
+            <generic:Attributes>
+               <generic:Value id="OBS_FLAG" value="p" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FI" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FI19" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FI1B" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FI1C" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FI1D" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FI20" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR10" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR24" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR25" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR26" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR30" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR41" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR42" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR43" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR51" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR52" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR53" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR61" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR62" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR63" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="13.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR71" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR72" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR81" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR82" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR83" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR91" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR92" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR93" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FR94" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="FX" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HR" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU10" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="HU33" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="IE" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="IE01" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="IE02" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="IS" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="IT" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITC1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITC2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITC3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="13.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITC4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITF1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITF2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITF3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITF4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITF5" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITF6" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITG1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITG2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITH1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITH2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITH3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITH4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITI1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITI2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="ITI4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="LT" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="LU" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="LV" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="MK" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="MT" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL13" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL33" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL34" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL41" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NL42" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO01" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO02" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO03" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO04" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO05" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO06" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="NO07" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL33" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL34" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL41" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL42" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL43" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL51" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL52" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL61" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL62" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PL63" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT15" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT16" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT17" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT18" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT20" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="PT30" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO41" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="RO42" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE11" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE12" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE21" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE22" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE23" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE31" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE32" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="4.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SE33" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SI" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SI01" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="2.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SI02" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SK" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.1" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SK01" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SK02" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="0.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SK03" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="SK04" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="1.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UK" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKC1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKC2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="12.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKD1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKD3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="5.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKD4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKE1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKE2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKE3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.6" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKE4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKF1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKF2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKF3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKG1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKG2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKG3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="7.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKH1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="12.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKH2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.4" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKH3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="12.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKI1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="3.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKI2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKJ1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKJ2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="13.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKJ3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKJ4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="9.7" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKK1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.8" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKK2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="12.3" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKK3" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="11.2" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKK4" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="14.0" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKL1" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="10.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKL2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="8.5" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKM" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.9" />
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKM2" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="NaN" />
+            <generic:Attributes>
+               <generic:Value id="OBS_STATUS" value="na" />
+            </generic:Attributes>
+         </generic:Obs>
+      </generic:Series>
+      <generic:Series>
+         <generic:SeriesKey>
+            <generic:Value id="ICD10" value="G20" />
+            <generic:Value id="UNIT" value="CDTH_RT" />
+            <generic:Value id="AGE" value="TOTAL" />
+            <generic:Value id="SEX" value="T" />
+            <generic:Value id="GEO" value="UKN0" />
+            <generic:Value id="FREQ" value="A" />
+         </generic:SeriesKey>
+         <generic:Obs>
+            <generic:ObsDimension value="2010" />
+            <generic:ObsValue value="6.4" />
+         </generic:Obs>
+      </generic:Series>
+   </message:DataSet>
+</message:GenericData>
