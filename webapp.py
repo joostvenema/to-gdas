@@ -40,7 +40,7 @@ def get_framework(tjs_url, framework_uri):
 
 
 def get_sdmx(sdmx_url):
-    # Fetch and proces SDMX dataset
+    # Fetch and process SDMX dataset
     try:
         y = requests.get(sdmx_url)
         xml = etree.fromstring(y.content)
@@ -54,9 +54,77 @@ def get_sdmx(sdmx_url):
         print(err)
 
 
+def get_odata(odata_url):
+    # Fetch and process ODATA dataset
+    # gdas = {}
+    try:
+        y = requests.get(odata_url)
+        data = y.json()
+        # Get root_url
+        root_url = data['odata.metadata'].split('$')[0]
+        # Get TableInfos
+        dataset = etree.Element("Dataset")
+        y = requests.get(root_url + 'TableInfos')
+        tbl = y.json().value[0]
+        etree.SubElement(dataset, "DatasetURI").text = tbl['Identifier']
+        etree.SubElement(dataset, "Organization").text = tbl['Catalog']
+        etree.SubElement(dataset, "Title").text = tbl['Title']
+        etree.SubElement(dataset, "Abstract").text = tbl['Summary']
+        etree.SubElement(dataset, "ReferenceDate").text = tbl['Period']
+        etree.SubElement(dataset, "Version").text = '0'
+        etree.SubElement(dataset, "Documentation").text = 'N_A'
+
+        # Get DataProperties
+        y = requests.get(root_url + 'DataProperties')
+        data_properties = y.json()
+        columnset = etree.SubElement(dataset, "Columnset")
+        fkey = etree.SubElement(
+            columnset,
+            "FrameworkKey",
+            complete="true",
+            relationship="one")
+        attrib = etree.SubElement(columnset, "Attributes")
+
+        for column in data_properties['value']:
+            if column['Type'] == 'GeoDimension':
+                col = etree.SubElement(
+                    fkey,
+                    "Column",
+                    name=column['Key'],
+                    type="http://www.w3.org/TR/xmlschema-2/#string",
+                    length="")
+                key_position = column['Position']
+            else:
+                col = etree.SubElement(
+                    attrib,
+                    "Column",
+                    name=column['Key'],
+                    type="http://www.w3.org/TR/xmlschema-2/#string",
+                    length="")
+                etree.SubElement(col, "Title").text = column['Title']
+                etree.SubElement(col, "Abstract").text = column['Description']
+        rowset = etree.SubElement(dataset, "Rowset")
+
+        for row in data.value:
+            rw = etree.SubElement(rowset, "Row")
+            for idx, value in enumerate(row):
+                if idx == key_position:
+                    k = etree.SubElement(rw, "K")
+                    k.text = value
+                else:
+                    v = etree.SubElement(rw, "V")
+                    v.text = value
+
+        return dataset
+
+    except Exception as err:
+        print(err)
+
+
 @app.route('/', method='GET')
 def index():
-    return 'This webservice converts SDMX to GDAS'
+    return '''Convert ODATA, SDMX to GDAS.
+        https://github.com/joostvenema/to-gdas'''
 
 
 @app.route('/sdmx', method='GET')
