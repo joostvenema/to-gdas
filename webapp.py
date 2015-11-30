@@ -11,6 +11,8 @@ from bottle import Bottle, run, request, response
 from lxml import etree
 import json
 import requests
+import messytables as mt
+import io
 
 with open('config.json', 'r') as f:
     cfg = json.load(f)
@@ -44,6 +46,64 @@ def get_framework(tjs_url, framework_uri):
     except Exception as err:
         print(err)
 
+def get_csv(csv_url, csv_key):
+    # Fetch and proces CSV dataset
+    y = requests.get(csv_url)
+    f = io.BytesIO(y.content)
+
+    table_set = mt.CSVTableSet(f)
+    row_set = table_set.tables[0]
+    offset, headers = mt.headers_guess(row_set.sample)
+    row_set.register_processor(mt.headers_processor(headers))
+    row_set.register_processor(mt.offset_processor(offset + 1))
+    types = mt.type_guess(row_set.sample, strict=True)
+    row_set.register_processor(mt.types_processor(types))
+
+    dataset = etree.Element("Dataset")
+    etree.SubElement(dataset, "DatasetURI").text = 'N_A'
+    etree.SubElement(dataset, "Organization").text = 'N_A'
+    etree.SubElement(dataset, "Title").text = 'N_A'
+    etree.SubElement(dataset, "Abstract").text = 'N_A'
+    etree.SubElement(dataset, "ReferenceDate").text = 'N_A'
+    etree.SubElement(dataset, "Version").text = '0'
+    etree.SubElement(dataset, "Documentation").text = 'N_A'
+    columnset = etree.SubElement(dataset, "Columnset")
+    fkey = etree.SubElement(
+        columnset,
+        "FrameworkKey",
+        complete="true",
+        relationship="one")
+    attrib = etree.SubElement(columnset, "Attributes")
+
+    for header in (row_set.sample.__next__()):
+        if header.column == csv_key:
+            col = etree.SubElement(
+                fkey,
+                "Column",
+                name=header.column,
+                type="http://www.w3.org/TR/xmlschema-2/#" + type(header.type).__name__.lower(),
+                length="")
+        else:
+            col = etree.SubElement(
+                attrib,
+                "Column",
+                name=header.column,
+                type="http://www.w3.org/TR/xmlschema-2/#" + type(header.type).__name__.lower(),
+                length="")
+            etree.SubElement(col, "Title").text = "N_A"
+            etree.SubElement(col, "Abstract").text =  "N_A"
+
+    rowset = etree.SubElement(dataset, "Rowset")
+    for row in row_set:
+        rw = etree.SubElement(rowset, "Row")
+        for cell in row:
+            if cell.column == csv_key:
+                k = etree.SubElement(rw, "K")
+            else:
+                k = etree.SubElement(rw, "V")
+            k.text = str(cell.value)
+
+    return dataset
 
 def get_sdmx(sdmx_url):
     # Fetch and process SDMX dataset
@@ -62,8 +122,6 @@ def get_sdmx(sdmx_url):
 
 def get_odata(odata_url):
     # Fetch and process ODATA dataset
-    # gdas = {}
-    # try:
     y = requests.get(odata_url)
     data = y.json()
     # Get root_url
@@ -120,22 +178,19 @@ def get_odata(odata_url):
 
     return dataset
 
-    # except Exception as err:
-    #     print(err)
-
-
 @app.route('/', method='GET')
 def index():
-    return '''Convert ODATA, SDMX to GDAS.
+    return '''Convert ODATA, SDMX and CSV to GDAS.<br><br>
         https://github.com/joostvenema/to-gdas'''
 
 
-@app.route('/sdmx', method='GET')
-def convert():
+@app.route('/<filetype>', method='GET')
+def convert(filetype):
     # get query parameters
     tjs_url = request.params.tjs_url
     framework_uri = request.params.framework_uri
     dataset_url = request.params.dataset_url
+    dataset_key = request.params.dataset_key
     # Setup XML elements
     root = etree.Element(
         "GDAS",
@@ -149,37 +204,18 @@ def convert():
     # Append TJS framework
     root.append(framework)
     # Append dataset
-    dataset = get_sdmx(dataset_url)
+    if filetype == 'sdmx':
+        dataset = get_sdmx(dataset_url)
+    elif filetype == 'odata':
+        dataset = get_odata(dataset_url)
+    elif filetype == 'csv':
+        dataset = get_csv(dataset_url, dataset_key)
+    else:
+        response.status_code = 500
+        return 'No valid endpoint. Must be: sdmx, odata or csv'
     root[0].append(dataset)
 
     response.content_type = 'application/xml'
-
-    return etree.tostring(root, pretty_print=True)
-
-@app.route('/odata', method='GET')
-def convert():
-    # get query parameters
-    tjs_url = request.params.tjs_url
-    framework_uri = request.params.framework_uri
-    dataset_url = request.params.dataset_url
-    # Setup XML elements
-    root = etree.Element(
-        "GDAS",
-        version="1.0",
-        service="TJS",
-        capabilities="http://sis.agr.gc.ca/pls/meta/tjs_1x0_getcapabilities",
-        xmlns="http://www.opengis.net/tjs/1.0")
-
-    # Get TJS framework
-    framework = get_framework(tjs_url, framework_uri)
-    # Append TJS framework
-    root.append(framework)
-    # Append dataset
-    dataset = get_odata(dataset_url)
-    root[0].append(dataset)
-
-    response.content_type = 'application/xml'
-
     return etree.tostring(root, pretty_print=True)
 
 run(app, host=cfg['host'], port=cfg['port'], reloader=True, server='waitress')
