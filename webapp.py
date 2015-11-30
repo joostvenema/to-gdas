@@ -33,7 +33,7 @@ def get_framework(tjs_url, framework_uri):
                    'version': '1.0.0',
                    'request': 'DescribeFrameworks',
                    'FrameworkURI': framework_uri}
-        y = requests.get(tjs_url, params=payload)
+        y = requests.get(tjs_url, params=payload, verify=False)
         xml = etree.fromstring(y.content)
         xml_temp = etree.tostring(xml[0])
         # Quick&dirty removal of namespace prefix
@@ -48,7 +48,7 @@ def get_framework(tjs_url, framework_uri):
 
 def get_csv(csv_url, csv_key):
     # Fetch and proces CSV dataset
-    y = requests.get(csv_url)
+    y = requests.get(csv_url, verify=False)
     f = io.BytesIO(y.content)
 
     table_set = mt.CSVTableSet(f)
@@ -108,7 +108,7 @@ def get_csv(csv_url, csv_key):
 def get_sdmx(sdmx_url):
     # Fetch and process SDMX dataset
     try:
-        y = requests.get(sdmx_url)
+        y = requests.get(sdmx_url, verify=False)
         xml = etree.fromstring(y.content)
         xslt_root = etree.parse("xslt/sdmx-gdas.xsl")
         transform = etree.XSLT(xslt_root)
@@ -122,13 +122,13 @@ def get_sdmx(sdmx_url):
 
 def get_odata(odata_url):
     # Fetch and process ODATA dataset
-    y = requests.get(odata_url)
+    y = requests.get(odata_url, verify=False)
     data = y.json()
     # Get root_url
     root_url = data['odata.metadata'].split('$')[0]
     # Get TableInfos
     dataset = etree.Element("Dataset")
-    y = requests.get(root_url + 'TableInfos')
+    y = requests.get(root_url + 'TableInfos', verify=False)
     tbl = y.json()['value'][0]
     etree.SubElement(dataset, "DatasetURI").text = tbl['Identifier']
     etree.SubElement(dataset, "Organization").text = tbl['Catalog']
@@ -139,7 +139,7 @@ def get_odata(odata_url):
     etree.SubElement(dataset, "Documentation").text = 'N_A'
 
     # Get DataProperties
-    y = requests.get(root_url + 'DataProperties')
+    y = requests.get(root_url + 'DataProperties', verify=False)
     data_properties = y.json()
     columnset = etree.SubElement(dataset, "Columnset")
     fkey = etree.SubElement(
