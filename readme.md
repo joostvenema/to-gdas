@@ -2,7 +2,11 @@
 
 ## What is to-gdas?
 
-to-gdas is a webservice to convert a dataset to GDAS format. Currently only the SDMX format is supported.
+to-gdas is a webservice to convert a dataset to GDAS format. Currently the following input formats are supported:
+
+- SDMX
+- ODATA
+- CSV
 
 The status is **alpha**. It works, but has no logging or error handling and such.
 
@@ -37,6 +41,7 @@ The docker image is automatically build whenever `master` is updated.
 Edit config.json. The following settings are required:
 
 `host` - The hostname of the machine (default: 0.0.0.0)
+
 `port` - The port to be used (default: 9090)
 
 #### Running the app
@@ -48,9 +53,23 @@ To run in the background (linux): `nohup python3 webapp.py > output.log &`
 
 The service must be called with 3 parameters: `tjs_url`, `framework_uri` and `dataset_url`. Please use a http GET request.
 
-example:
+If you are behind a proxy, just set your enviroment variables: `http_proxy`, `https_proxy` and/or `no_proxy`
+
+
+
+#### example:
+
+for SDMX:
 
 `http://to-gdas.example.com:9090/sdmx?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]`
+
+for ODATA:
+
+`http://to-gdas.example.com:9090/odata?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]`
+
+for CSV:
+
+`http://to-gdas.example.com:9090/csv?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]&dataset_key=[key]`
 
 `tjs_url` should point to the TJS server:
 
@@ -60,7 +79,7 @@ example:
 
 `http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs/CBSGemeente2012`
 
-`dataset_url` should point to an SDMX file, or output of a service, e.g.:
+`dataset_url` should point to an SDMX, ODATA or CSV file, or output of a service, e.g.:
 
 `http://ec.europa.eu/eurostat/SDMX/diss-web/rest/data/hlth_cd_acdr/A..T.TOTAL.G20./?startperiod=2010&endPeriod=2010`
 
