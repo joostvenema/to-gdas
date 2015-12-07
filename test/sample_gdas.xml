@@ -18,7 +18,7 @@ http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs/CBSGemeente2012
 <East>285992.54191289237</East>
 <West>4383.938765187166</West>
 </BoundingCoordinates>
-<DescribeDatasetsRequest xlink:href="http://tjs.test.pdok.nl/tjs?request=DescribeDatasets&amp;Service=TJS&amp;Version=1.0.0&amp;FrameworkURI=http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs/CBSGemeente2012"/>
+<DescribeDatasetsRequest xlink:href="http://tjs.test.pdok.nl/tjs?request=DescribeDatasets&Service=TJS&Version=1.0.0&FrameworkURI=http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs/CBSGemeente2012"/>
 <Dataset>
 <DatasetURI>N_A</DatasetURI>
 <Organization>N_A</Organization>
