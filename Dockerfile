@@ -18,4 +18,4 @@ RUN pip install -r requirements.txt
 EXPOSE 9090
 
 # bring app to live
-CMD [ "python", "./webapp.py" ]
+CMD [ "python", "-u", "./webapp.py" ]
