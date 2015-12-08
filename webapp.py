@@ -2,10 +2,6 @@
 #
 # to-gdas - A * to GDAS conversion service
 #
-# Currently only the SDMX format is supported,
-# with the GEO attribute as framework-key
-#
-# version 0.6
 
 from bottle import Bottle, run, request, response
 from lxml import etree
@@ -19,6 +15,8 @@ with open('config.json', 'r') as f:
 
 app = Bottle()
 
+
+# Just like str(), but return an empty string instead of None
 def xstr(s):
     if s is None:
         return ''
@@ -26,6 +24,9 @@ def xstr(s):
         return str(s)
 
 
+#
+# Fetch framework from remote server and return as XML element
+#
 def get_framework(tjs_url, framework_uri):
     # Fetch and proces TJS framework
     try:
@@ -45,6 +46,7 @@ def get_framework(tjs_url, framework_uri):
 
     except Exception as err:
         print(err)
+
 
 def get_csv(csv_url, csv_key):
     # Fetch and proces CSV dataset
@@ -76,25 +78,30 @@ def get_csv(csv_url, csv_key):
     attrib = etree.SubElement(columnset, "Attributes")
 
     for header in (row_set.sample.__next__()):
+        header_type = type(header.type).__name__.lower()[:-4]
         if header.column == csv_key:
             col = etree.SubElement(
                 fkey,
                 "Column",
                 name=header.column,
-                type="http://www.w3.org/TR/xmlschema-2/#" + type(header.type).__name__.lower(),
+                type="http://www.w3.org/TR/xmlschema-2/#" + header_type,
                 length="")
         else:
             col = etree.SubElement(
                 attrib,
                 "Column",
                 name=header.column,
-                type="http://www.w3.org/TR/xmlschema-2/#" + type(header.type).__name__.lower(),
+                type="http://www.w3.org/TR/xmlschema-2/#" + header_type,
                 length="")
             etree.SubElement(col, "Title").text = "N_A"
-            etree.SubElement(col, "Abstract").text =  "N_A"
-
+            etree.SubElement(col, "Abstract").text = "N_A"
     rowset = etree.SubElement(dataset, "Rowset")
-    for row in row_set:
+
+    # For some reason the offset doesn't work, so we skip the headers with
+    # a workaround
+    iter_rows = iter(row_set)
+    next(iter_rows)
+    for row in iter_rows:
         rw = etree.SubElement(rowset, "Row")
         for cell in row:
             if cell.column == csv_key:
@@ -104,6 +111,7 @@ def get_csv(csv_url, csv_key):
             k.text = str(cell.value)
 
     return dataset
+
 
 def get_sdmx(sdmx_url):
     # Fetch and process SDMX dataset
@@ -178,19 +186,27 @@ def get_odata(odata_url):
 
     return dataset
 
+
 @app.route('/', method='GET')
 def index():
     return '''Convert ODATA, SDMX and CSV to GDAS.<br><br>
         https://github.com/joostvenema/to-gdas'''
 
 
-@app.route('/<filetype>', method='GET')
+@app.route('/convert/<filetype>', method='GET')
 def convert(filetype):
     # get query parameters
     tjs_url = request.params.tjs_url
     framework_uri = request.params.framework_uri
     dataset_url = request.params.dataset_url
     dataset_key = request.params.dataset_key
+
+    # print some info
+    print('tjs_url: ' + tjs_url)
+    print('framework_uri: ' + framework_uri)
+    print('dataset_url: ' + dataset_url)
+    print('dataset_key: ' + dataset_key)
+
     # Setup XML elements
     root = etree.Element(
         "GDAS",
@@ -211,8 +227,9 @@ def convert(filetype):
     elif filetype == 'csv':
         dataset = get_csv(dataset_url, dataset_key)
     else:
-        response.status_code = 500
+        response.status = 500
         return 'No valid endpoint. Must be: sdmx, odata or csv'
+
     root[0].append(dataset)
 
     response.content_type = 'application/xml'
