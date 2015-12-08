@@ -5,6 +5,9 @@ MAINTAINER Joost Venema <joost.venema@kadaster.nl>
 #
 # VERSION       1.0
 
+# Needed to get output in detached mode
+ENV PYTHONUNBUFFERED 0
+
 # Clone latest to-gdas version from Github
 RUN git clone https://github.com/joostvenema/to-gdas.git
 
@@ -18,4 +21,4 @@ RUN pip install -r requirements.txt
 EXPOSE 9090
 
 # bring app to live
-CMD [ "python", "-u", "./webapp.py" ]
+CMD [ "python", "./webapp.py" ]
