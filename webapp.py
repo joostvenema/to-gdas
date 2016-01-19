@@ -109,7 +109,7 @@ def get_csv(csv_url, csv_key):
         rw = etree.SubElement(rowset, "Row")
         for cell in row:
             if cell.column == csv_key:
-                k = etree.SubElement(rw, "K")
+                k = rw.insert(0, etree.Element("K"))
             else:
                 k = etree.SubElement(rw, "V")
             k.text = str(cell.value)
@@ -169,7 +169,7 @@ def get_odata(odata_url):
                 name=column['Key'],
                 type="http://www.w3.org/TR/xmlschema-2/#string",
                 length="255")
-            col_pos.append([column['Position'], column['Key'], 'K'])
+            col_pos.insert(0, [column['Position'], column['Key'], 'K'])
         else:
             col = etree.SubElement(
                 attrib,
