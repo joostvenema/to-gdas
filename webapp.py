@@ -9,6 +9,7 @@ import json
 import requests
 import messytables as mt
 import io
+import re
 
 with open('config.json', 'r') as f:
     cfg = json.load(f)
@@ -61,10 +62,13 @@ def get_csv(csv_url, csv_key):
     types = mt.type_guess(row_set.sample, strict=True)
     row_set.register_processor(mt.types_processor(types))
 
+    # Get dataset title from filename
+    dataset_title = re.split('\.|\/', csv_url)[-2]
+
     dataset = etree.Element("Dataset")
     etree.SubElement(dataset, "DatasetURI").text = 'N_A'
     etree.SubElement(dataset, "Organization").text = 'N_A'
-    etree.SubElement(dataset, "Title").text = 'N_A'
+    etree.SubElement(dataset, "Title").text = dataset_title[:25]
     etree.SubElement(dataset, "Abstract").text = 'N_A'
     etree.SubElement(dataset, "ReferenceDate").text = 'N_A'
     etree.SubElement(dataset, "Version").text = '0'
@@ -85,14 +89,14 @@ def get_csv(csv_url, csv_key):
                 "Column",
                 name=header.column,
                 type="http://www.w3.org/TR/xmlschema-2/#" + header_type,
-                length="")
+                length="255")
         else:
             col = etree.SubElement(
                 attrib,
                 "Column",
                 name=header.column,
                 type="http://www.w3.org/TR/xmlschema-2/#" + header_type,
-                length="")
+                length="255")
             etree.SubElement(col, "Title").text = "N_A"
             etree.SubElement(col, "Abstract").text = "N_A"
     rowset = etree.SubElement(dataset, "Rowset")
@@ -164,7 +168,7 @@ def get_odata(odata_url):
                 "Column",
                 name=column['Key'],
                 type="http://www.w3.org/TR/xmlschema-2/#string",
-                length="")
+                length="255")
             col_pos.append([column['Position'], column['Key'], 'K'])
         else:
             col = etree.SubElement(
@@ -172,7 +176,7 @@ def get_odata(odata_url):
                 "Column",
                 name=column['Key'],
                 type="http://www.w3.org/TR/xmlschema-2/#string",
-                length="")
+                length="255")
             etree.SubElement(col, "Title").text = column['Title']
             etree.SubElement(col, "Abstract").text = column['Description']
             col_pos.append([column['Position'], column['Key'], 'V'])
