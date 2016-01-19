@@ -109,10 +109,12 @@ def get_csv(csv_url, csv_key):
         rw = etree.SubElement(rowset, "Row")
         for cell in row:
             if cell.column == csv_key:
-                k = rw.insert(0, etree.Element("K"))
+                k = etree.Element("K")
+                k.text = str(cell.value)
+                rw.insert(0, k)
             else:
                 k = etree.SubElement(rw, "V")
-            k.text = str(cell.value)
+                k.text = str(cell.value)
 
     return dataset
 
