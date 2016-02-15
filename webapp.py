@@ -164,7 +164,7 @@ def get_odata(odata_url):
     attrib = etree.SubElement(columnset, "Attributes")
     col_pos = []
     for column in data_properties['value']:
-        if column['Type'] == 'GeoDimension':
+        if column['Type'] in ('GeoDimension', 'GeoDetail'):
             col = etree.SubElement(
                 fkey,
                 "Column",
