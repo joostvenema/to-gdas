@@ -153,7 +153,7 @@ def get_odata(odata_url):
     etree.SubElement(dataset, "Documentation").text = 'N_A'
 
     # Get DataProperties
-    y = requests.get(root_url + 'DataProperties', verify=False)
+    y = requests.get(root_url + 'DataProperties?$filter=Type%20ne%20%27TopicGroup%27', verify=False)
     data_properties = y.json()
     columnset = etree.SubElement(dataset, "Columnset")
     fkey = etree.SubElement(
