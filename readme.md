@@ -20,9 +20,15 @@ GDAS is a schema in XML to be used in a [Table Joining Service](http://www.openg
 
 ### Install using Docker
 
-[Docker](http://docker.io) "is an open platform for developers and sysadmins to build, ship, and run distributed applications."
+The recommended way to instal to-gdas is using [Docker](http://docker.io)
 
-To run to-gdas, use the following commandline: `docker run -d ojajoh/to-gdas to-gdas`
+To run to-gdas, use the following commandline:
+
+`docker run -d --restart=always --name to-gdas -p 80:9090 -e "PYTHONUNBUFFERED=0" ojajoh/to-gdas`
+
+Maybe you're want to run it behind a corporate proxy, in this case you can pass the proxy settings like this:
+
+`docker run -d --restart=always --name to-gdas -p 80:9090 -e "http_proxy=http://yourproxy:8080" -e "https_proxy=http://yourproxy:8080" -e "no_proxy=your.internal.domain" -e "PYTHONUNBUFFERED=0" ojajoh/to-gdas`
 
 The docker image is automatically build whenever `master` is updated.
 
@@ -31,6 +37,9 @@ The docker image is automatically build whenever `master` is updated.
 #### Requirements
 
 * [Python 3.x](http://www.python.org/getit/)
+
+Python packages (you can install them via `requirements.txt`):
+
 * [lxml](http://lxml.de/)
 * [Requests](http://docs.python-requests.org/en/latest/)
 * [Bottle](http://bottlepy.org/docs/dev/index.html)
@@ -44,18 +53,11 @@ Edit config.json. The following settings are required:
 
 `port` - The port to be used (default: 9090)
 
-#### Running the app
-Start the app: `python3 webapp.py`
-
-To run in the background (linux): `nohup python3 webapp.py > output.log &`
-
 ### Using the service
 
 The service must be called with 3 parameters: `tjs_url`, `framework_uri` and `dataset_url`. Please use a http GET request.
 
 If you are behind a proxy, just set your enviroment variables: `http_proxy`, `https_proxy` and/or `no_proxy`
-
-
 
 #### example:
 

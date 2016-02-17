@@ -17,18 +17,16 @@ with open('config.json', 'r') as f:
 app = Bottle()
 
 
-# Just like str(), but return an empty string instead of None
 def xstr(s):
+    """Just like str(), but return an empty string instead of None."""
     if s is None:
         return ''
     else:
         return str(s)
 
 
-#
-# Fetch framework from remote server and return as XML element
-#
 def get_framework(tjs_url, framework_uri):
+    """Fetch framework from remote server and return as XML element."""
     # Fetch and proces TJS framework
     try:
         payload = {'service': 'TJS',
@@ -50,7 +48,7 @@ def get_framework(tjs_url, framework_uri):
 
 
 def get_csv(csv_url, csv_key):
-    # Fetch and proces CSV dataset
+    """Fetch and proces external CSV-file and return dataset XML fragment."""
     y = requests.get(csv_url, verify=False)
     f = io.BytesIO(y.content)
 
@@ -120,7 +118,7 @@ def get_csv(csv_url, csv_key):
 
 
 def get_sdmx(sdmx_url):
-    # Fetch and process SDMX dataset
+    """Fetch and proces external SDMX-file and return dataset XML fragment."""
     try:
         y = requests.get(sdmx_url, verify=False)
         xml = etree.fromstring(y.content)
@@ -135,7 +133,7 @@ def get_sdmx(sdmx_url):
 
 
 def get_odata(odata_url):
-    # Fetch and process ODATA dataset
+    """Fetch and proces external ODATA-file and return dataset XML fragment."""
     y = requests.get(odata_url, verify=False)
     data = y.json()
     # Get root_url
@@ -239,6 +237,6 @@ def convert(filetype):
     root[0].append(dataset)
 
     response.content_type = 'application/xml'
-    return etree.tostring(root, pretty_print=True)
+    return etree.tostring(root)
 
-run(app, host=cfg['host'], port=cfg['port'], reloader=True, server='waitress')
+run(app, host=cfg['host'], port=cfg['port'], server='waitress')
