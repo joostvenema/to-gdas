@@ -1,15 +1,21 @@
-# !/usr/bin/env python3
-#
-# to-gdas - A * to GDAS conversion service
-#
+# -*- coding: utf-8 -*-
+"""to-gdas
 
-from bottle import Bottle, run, request, response
+to-gdas is a webservice that converts several data formats to GDAS.
+
+If conversion is succesful, the service will return a GDAS file with status 200
+"""
+
+from bottle import Bottle, run, request, response, abort
 from lxml import etree
+import logging
 import json
 import requests
 import messytables as mt
 import io
 import re
+
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 with open('config.json', 'r') as f:
     cfg = json.load(f)
@@ -27,24 +33,19 @@ def xstr(s):
 
 def get_framework(tjs_url, framework_uri):
     """Fetch framework from remote server and return as XML element."""
-    # Fetch and proces TJS framework
-    try:
-        payload = {'service': 'TJS',
-                   'version': '1.0.0',
-                   'request': 'DescribeFrameworks',
-                   'FrameworkURI': framework_uri}
-        y = requests.get(tjs_url, params=payload, verify=False)
-        xml = etree.fromstring(y.content)
-        xml_temp = etree.tostring(xml[0])
-        # Quick&dirty removal of namespace prefix
-        root = xml_temp.replace(b'ns0:', b'')
-        parser = etree.XMLParser(ns_clean=True, encoding='utf-8')
-        framework = etree.fromstring(root, parser=parser)
+    payload = {'service': 'TJS',
+               'version': '1.0.0',
+               'request': 'DescribeFrameworks',
+               'FrameworkURI': framework_uri}
+    y = requests.get(tjs_url, params=payload, verify=False)
+    xml = etree.fromstring(y.content)
+    xml_temp = etree.tostring(xml[0])
+    # Quick&dirty removal of namespace prefix
+    root = xml_temp.replace(b'ns0:', b'')
+    parser = etree.XMLParser(ns_clean=True, encoding='utf-8')
+    framework = etree.fromstring(root, parser=parser)
 
-        return framework
-
-    except Exception as err:
-        print(err)
+    return framework
 
 
 def get_csv(csv_url, csv_key):
@@ -129,7 +130,7 @@ def get_sdmx(sdmx_url):
         return dataset
 
     except Exception as err:
-        print(err)
+        logging.error(err)
 
 
 def get_odata(odata_url):
@@ -151,7 +152,10 @@ def get_odata(odata_url):
     etree.SubElement(dataset, "Documentation").text = 'N_A'
 
     # Get DataProperties
-    y = requests.get(root_url + 'DataProperties?$filter=Type%20ne%20%27TopicGroup%27', verify=False)
+    y = requests.get(root_url +
+                     'DataProperties?$filter=Type%20ne%20%27TopicGroup%27',
+                     verify=False)
+
     data_properties = y.json()
     columnset = etree.SubElement(dataset, "Columnset")
     fkey = etree.SubElement(
@@ -199,17 +203,30 @@ def index():
 
 @app.route('/convert/<filetype>', method='GET')
 def convert(filetype):
-    # get query parameters
     tjs_url = request.params.tjs_url
     framework_uri = request.params.framework_uri
     dataset_url = request.params.dataset_url
     dataset_key = request.params.dataset_key
 
-    # print some info
-    print('tjs_url: ' + tjs_url)
-    print('framework_uri: ' + framework_uri)
-    print('dataset_url: ' + dataset_url)
-    print('dataset_key: ' + dataset_key)
+    if filetype not in ('sdmx', 'odata', 'csv'):
+        abort(404, 'No valid endpoint. Must be: sdmx, odata or csv')
+
+    if tjs_url is None or tjs_url == '':
+        abort(400, "tjs_url must have a value")
+
+    if framework_uri is None or framework_uri == '':
+        abort(400, "framework_uri must have a value")
+
+    if dataset_url is None or dataset_url == '':
+        abort(400, "dataset_url must have a value")
+
+    if filetype == 'csv' and (dataset_key is None or dataset_key == ''):
+        abort(400, "dataset_key must have a value")
+
+    logging.info('tjs_url: ' + tjs_url)
+    logging.info('framework_uri: ' + framework_uri)
+    logging.info('dataset_url: ' + dataset_url)
+    logging.info('dataset_key: ' + dataset_key)
 
     # Setup XML elements
     root = etree.Element(
@@ -219,20 +236,27 @@ def convert(filetype):
         capabilities="http://sis.agr.gc.ca/pls/meta/tjs_1x0_getcapabilities",
         xmlns="http://www.opengis.net/tjs/1.0")
 
-    # Get TJS framework
-    framework = get_framework(tjs_url, framework_uri)
-    # Append TJS framework
+    try:
+        framework = get_framework(tjs_url, framework_uri)
+
+    except Exception as err:
+        logging.error(err)
+        abort(500, 'Error getting framework from TJS. '
+              'Please check tjs_url and framework_uri')
+
     root.append(framework)
-    # Append dataset
-    if filetype == 'sdmx':
-        dataset = get_sdmx(dataset_url)
-    elif filetype == 'odata':
-        dataset = get_odata(dataset_url)
-    elif filetype == 'csv':
-        dataset = get_csv(dataset_url, dataset_key)
-    else:
-        response.status = 500
-        return 'No valid endpoint. Must be: sdmx, odata or csv'
+
+    try:
+        if filetype == 'sdmx':
+            dataset = get_sdmx(dataset_url)
+        elif filetype == 'odata':
+            dataset = get_odata(dataset_url)
+        elif filetype == 'csv':
+            dataset = get_csv(dataset_url, dataset_key)
+    except Exception as err:
+        logging.error(err)
+        abort(500, 'Error getting dataset. '
+              'Please check dataset_url')
 
     root[0].append(dataset)
 
