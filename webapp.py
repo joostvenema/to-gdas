@@ -12,6 +12,7 @@ import logging
 import json
 import requests
 import messytables as mt
+import markdown
 import io
 import re
 
@@ -19,6 +20,10 @@ logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 with open('config.json', 'r') as f:
     cfg = json.load(f)
+
+with open('readme.md', 'r') as f:
+    text = f.read()
+    index_html = markdown.markdown(text)
 
 app = Bottle()
 
@@ -120,17 +125,13 @@ def get_csv(csv_url, csv_key):
 
 def get_sdmx(sdmx_url):
     """Fetch and proces external SDMX-file and return dataset XML fragment."""
-    try:
-        y = requests.get(sdmx_url, verify=False)
-        xml = etree.fromstring(y.content)
-        xslt_root = etree.parse("xslt/sdmx-gdas.xsl")
-        transform = etree.XSLT(xslt_root)
-        dataset = etree.fromstring(str((transform(xml))))
+    y = requests.get(sdmx_url, verify=False)
+    xml = etree.fromstring(y.content)
+    xslt_root = etree.parse("xslt/sdmx-gdas.xsl")
+    transform = etree.XSLT(xslt_root)
+    dataset = etree.fromstring(str((transform(xml))))
 
-        return dataset
-
-    except Exception as err:
-        logging.error(err)
+    return dataset
 
 
 def get_odata(odata_url):
@@ -197,8 +198,7 @@ def get_odata(odata_url):
 
 @app.route('/', method='GET')
 def index():
-    return '''Convert ODATA, SDMX and CSV to GDAS.<br><br>
-        https://github.com/joostvenema/to-gdas'''
+    return index_html
 
 
 @app.route('/convert/<filetype>', method='GET')
