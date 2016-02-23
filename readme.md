@@ -63,15 +63,15 @@ If you are behind a proxy, just set your enviroment variables: `http_proxy`, `ht
 
 for SDMX:
 
-`http://to-gdas.example.com:9090/sdmx?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]`
+`http://to-gdas.example.com:9090/convert/sdmx?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]`
 
 for ODATA:
 
-`http://to-gdas.example.com:9090/odata?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]`
+`http://to-gdas.example.com:9090/convert/odata?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]`
 
 for CSV:
 
-`http://to-gdas.example.com:9090/csv?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]&dataset_key=[key]`
+`http://to-gdas.example.com:9090/convert/csv?tjs_url=[url]&framework_uri=[uri]&dataset_url=[url]&dataset_key=[key]`
 
 `tjs_url` should point to the TJS server:
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameworkDescriptions version="1.0" lang="es" service="TJS" capabilities="http://sis.agr.gc.ca/pls/meta/tjs_1x0_getcapabilities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/tjs/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/tjs/1.0 http://schemas.opengis.net/tjs/1.0/tjsDescribeDatasets_response.xsd" xmlns:__temp="http://www.iderc.co.cu/geomix/tjs/temp" xmlns:cbsgebiedsindelingen="http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs">
+  <Framework>
+    <FrameworkURI>http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs/CBSGemeente2012</FrameworkURI>
+    <Organization>CBS</Organization>
+    <Title>CBSGemeente2012</Title>
+    <Abstract>CBS Gemeente 2012</Abstract>
+    <ReferenceDate>Thu Oct 08 00:00:00 CEST 2015</ReferenceDate>
+    <Version>0</Version>
+    <Documentation>n.a.</Documentation>
+    <FrameworkKey><Column name="statcode" type="http://www.w3.org/TR/xmlschema-2/#string" length="0" decimals="0"/></FrameworkKey>
+    <BoundingCoordinates><North>621394.9115808002</North><South>304922.5060582219</South><East>285992.54191289237</East><West>4383.938765187166</West></BoundingCoordinates>
+    <DescribeDatasetsRequest xlink:href="http://tjs.test.pdok.nl/tjs?request=DescribeDatasets&amp;Service=TJS&amp;Version=1.0.0&amp;FrameworkURI=http://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wfs/CBSGemeente2012"/>
+  </Framework>
+</FrameworkDescriptions>
