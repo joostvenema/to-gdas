@@ -153,10 +153,20 @@ def get_odata(odata_url):
     etree.SubElement(dataset, "Version").text = '0'
     etree.SubElement(dataset, "Documentation").text = 'N_A'
 
+    # Construct filter for DataProperties
+    odata_keys = (data['value'][0].keys())
+
+    odata_key_filter = "Type ne 'TopicGroup' and (Type eq 'GeoDimension'"
+    odata_key_filter += " or Type eq 'GeoDetail'"
+
+    for key in odata_keys:
+        print(key)
+        odata_key_filter +=  " or Key eq '{0}'".format(key)
+    odata_key_filter += ')'
+
     # Get DataProperties
     y = requests.get(root_url +
-                     'DataProperties?$filter=Type%20ne%20%27TopicGroup%27',
-                     verify=False)
+                     'DataProperties?$filter=' + odata_key_filter, verify=False)
 
     data_properties = y.json()
     columnset = etree.SubElement(dataset, "Columnset")
