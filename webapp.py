@@ -145,7 +145,7 @@ def get_odata(odata_url):
     dataset = etree.Element("Dataset")
     y = requests.get(root_url + 'TableInfos', verify=False)
     tbl = y.json()['value'][0]
-    etree.SubElement(dataset, "DatasetURI").text = tbl['Identifier']
+    etree.SubElement(dataset, "DatasetURI").text = odata_url
     etree.SubElement(dataset, "Organization").text = tbl['Catalog']
     etree.SubElement(dataset, "Title").text = tbl['Title']
     etree.SubElement(dataset, "Abstract").text = tbl['Summary']
@@ -160,7 +160,6 @@ def get_odata(odata_url):
     odata_key_filter += " or Type eq 'GeoDetail'"
 
     for key in odata_keys:
-        print(key)
         odata_key_filter +=  " or Key eq '{0}'".format(key)
     odata_key_filter += ')'
 
