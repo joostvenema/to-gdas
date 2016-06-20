@@ -8,8 +8,6 @@ to-gdas is a webservice to convert a dataset to GDAS format. Currently the follo
 - ODATA
 - CSV
 
-The status is **alpha**. It works, but has no logging or error handling and such.
-
 ## What is GDAS?
 
 GDAS is a schema in XML to be used in a [Table Joining Service](http://www.opengeospatial.org/standards/tjs).
@@ -20,13 +18,13 @@ GDAS is a schema in XML to be used in a [Table Joining Service](http://www.openg
 
 ### Install using Docker
 
-The recommended way to instal to-gdas is using [Docker](http://docker.io)
+The recommended way to instal to-gdas is using [Docker](http://www.docker.com)
 
 To run to-gdas, use the following commandline:
 
 `docker run -d --restart=always --name to-gdas -p 80:9090 -e "PYTHONUNBUFFERED=0" ojajoh/to-gdas`
 
-Maybe you're want to run it behind a corporate proxy, in this case you can pass the proxy settings like this:
+Maybe you want to run it behind a corporate proxy, in this case you can pass the proxy settings like this:
 
 `docker run -d --restart=always --name to-gdas -p 80:9090 -e "http_proxy=http://yourproxy:8080" -e "https_proxy=http://yourproxy:8080" -e "no_proxy=your.internal.domain" -e "PYTHONUNBUFFERED=0" ojajoh/to-gdas`
 
@@ -38,7 +36,7 @@ The docker image is automatically build whenever `master` is updated.
 
 * [Python 3.x](http://www.python.org/getit/)
 
-Python packages (you can install them via `requirements.txt`):
+Python packages (See also `requirements.txt`):
 
 * [lxml](http://lxml.de/)
 * [Requests](http://docs.python-requests.org/en/latest/)
@@ -59,7 +57,7 @@ The service must be called with 3 parameters: `tjs_url`, `framework_uri` and `da
 
 If you are behind a proxy, just set your enviroment variables: `http_proxy`, `https_proxy` and/or `no_proxy`
 
-#### example:
+#### Examples:
 
 for SDMX:
 
